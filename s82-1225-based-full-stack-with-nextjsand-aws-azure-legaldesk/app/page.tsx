@@ -9,7 +9,7 @@ export default function HomePage() {
           <div className="h-8 w-8 rounded-md bg-blue-600 text-white flex items-center justify-center">
             ⚖️
           </div>
-          <span className="font-semibold text-lg">LegalDeadline</span>
+          <span className="font-semibold text-lg">LegalDesk</span>
         </div>
 
         
