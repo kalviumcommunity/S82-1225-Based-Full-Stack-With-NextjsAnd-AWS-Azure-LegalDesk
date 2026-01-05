@@ -5,7 +5,7 @@ export default function RegisterPage() {
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="w-full max-w-md bg-white p-8 rounded-xl shadow">
         <h1 className="text-2xl font-bold text-center mb-2">
-          Create your LegalDeadline account
+          Create your LegalDesk account
         </h1>
         <p className="text-center text-gray-600 mb-6">
           Start managing legal deadlines in minutes
