@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Here’s a brief, clean, and submission-ready version you can paste into your README.md:
 
-## Getting Started
+Rendering Strategy & Performance
 
-First, run the development server:
+This project uses Next.js App Router with a mix of Static, Dynamic, and Hybrid Rendering to balance performance and data accuracy.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Static Rendering (SSG) is used for the Landing Page (/) since it contains public, non-user-specific content. This enables fast load times, CDN caching, and improved SEO.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Dynamic Rendering (SSR) is applied to Dashboard pages (/dashboard) that display authenticated, user-specific, and time-sensitive data such as legal deadlines. These pages use cache: "no-store" to ensure real-time accuracy and data security.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Hybrid Rendering is implemented within the dashboard by combining:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Static or cached components for stable metrics
 
-## Learn More
+Incremental Static Regeneration (ISR) for frequently updated but non-critical data
 
-To learn more about Next.js, take a look at the following resources:
+Fully dynamic components for real-time user information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This approach improves performance while keeping data fresh and secure.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Trade-off Reflection:
+Static rendering offers speed but limited flexibility, dynamic rendering ensures accuracy at the cost of server load, and hybrid rendering balances both. Using all three strategically results in a scalable, production-ready application aligned with industry best practices.
