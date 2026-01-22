@@ -6,7 +6,7 @@ This project uses Next.js App Router with a mix of Static, Dynamic, and Hybrid R
 
 Static Rendering (SSG) is used for the Landing Page (/) since it contains public, non-user-specific content. This enables fast load times, CDN caching, and improved SEO.
 
-Dynamic Rendering (SSR) is applied to Dashboard pages (/dashboard) that display authenticated, user-specific, and time-sensitive data such as legal deadlines. These pages use cache: "no-store" to ensure real-time accuracy and data security.
+Dynamic Rendering (SSR) is applied to Dashboard pages (/dashboard) that display authenticated, user-specific, and time-sensitive data such as legal deadlines. These pages use cache: "no-store" to ensure real-time accuracy and the data security.
 
 Hybrid Rendering is implemented within the dashboard by combining:
 
@@ -14,7 +14,7 @@ Static or cached components for stable metrics
 
 Incremental Static Regeneration (ISR) for frequently updated but non-critical data
 
-Fully dynamic components for real-time user information
+Fully dynamic components for real-time user information.
 
 This approach improves performance while keeping data fresh and secure.
 
