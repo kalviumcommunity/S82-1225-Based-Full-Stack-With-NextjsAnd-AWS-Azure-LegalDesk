@@ -18,5 +18,5 @@ Fully dynamic components for real-time user information
 
 This approach improves performance while keeping data fresh and secure.
 
-Trade-off Reflection:
+Trade off Reflection:
 Static rendering offers speed but limited flexibility, dynamic rendering ensures accuracy at the cost of server load, and hybrid rendering balances both. Using all three strategically results in a scalable, production-ready application aligned with industry best practices.
